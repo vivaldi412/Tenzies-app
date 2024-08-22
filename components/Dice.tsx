@@ -67,16 +67,6 @@ export default function Dice(props : any) {
             
             <button className={classHeld} onClick={props.holdDice} >{props.value}
                 {HandleDiceNumber(props.value)}
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
             </button>
         </div>
     )
