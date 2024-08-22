@@ -2,10 +2,10 @@ main {
   
   display: flex;
   
+  position: relative;
   
   
-  
-  
+
   
   
 }
@@ -19,7 +19,7 @@ main {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  position: relative;
+  
 }
 
 
@@ -35,7 +35,8 @@ main {
   align-items: center;
   align-content: center;
   text-align: center;
-  flex-direction: column;  
+  flex-direction: column;
+  
 }
 
 .number-box {
@@ -44,7 +45,7 @@ main {
   
   gap: 20px;
   margin: 0px;
-
+  
 }
 h1 , p {
   margin: 0;
@@ -80,6 +81,8 @@ p {
   
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  position: relative;
+  
 }
 
 .btn-held {
@@ -195,3 +198,90 @@ p {
   margin-top: 50px;
   font-size: 0.90rem;
 }
+
+.dice-dot-box {
+  margin: 0;
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  right: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "p1 p2 p3" "p4 p5 p6" "p7 p8 p9";
+
+}
+
+/* .dot-6 { */
+  /* margin: 0; */
+  /* width: 5px; */
+  /* height: 5px; */
+  /* background-color: #1baff3; */
+/* } */
+
+#dotN1 {
+  grid-area: p1;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN2 {
+  grid-area: p3;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN3 {
+  grid-area: p4;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN4 {
+  grid-area: p6;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN5 {
+  grid-area: p7;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN6 {
+  grid-area: p9;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN7 {
+  grid-area: p2;
+  width: 6px;
+  height: 6px;
+  background-color: #ff0000;
+  border-radius: 10%;
+}
+#dotN8 {
+  grid-area: p2;
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+
+
+
+
+

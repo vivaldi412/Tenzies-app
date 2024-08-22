@@ -254,7 +254,7 @@ function fuckingNewDice(max : any , min : any) {
 
             {diceElements}
 
-
+            
 
 
 
@@ -265,6 +265,7 @@ function fuckingNewDice(max : any , min : any) {
         <p className='youWon'>{youWon(0 , 0)}</p>
       </div>
 
+        
 
       <div className='sidebar-container'>
        <div className='sidebar'>
@@ -282,8 +283,7 @@ function fuckingNewDice(max : any , min : any) {
 
 
 
-
-
+      
     </main>
   )
 }
