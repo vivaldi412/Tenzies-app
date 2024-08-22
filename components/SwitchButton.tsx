@@ -1,29 +1,30 @@
-import '../src/index.css'
-export default function Dice(props : any) {
-    const classHeld = props.isHeld ? "btn-held" : "btn"
+
+export default function SwitchButton(props : any) {
+
+
 
     function HandleDiceNumber(value : any) {
         let temp 
         if (value === 1){
-            temp = (<div className='dice-dot-box'>
-                <div id='dotN7'></div>
+            temp = (<div className='dice-dot-box-switch'>
+                <div id='dotN9'></div>
             </div>)
         }
         else if (value === 2){
-            temp = (<div className='dice-dot-box'>
+            temp = (<div className='dice-dot-box-switch'>
                 <div id='dotN2'></div>
                 <div id='dotN5'></div>
             </div>)
         }
         else if (value === 3){
-            temp = (<div className='dice-dot-box'>
+            temp = (<div className='dice-dot-box-switch'>
                 <div id='dotN2'></div>
                 <div id='dotN5'></div>
-                <div id='dotN8'></div>
+                <div id='dotN10'></div>
             </div>)
         }
         else if(value === 4){
-            temp = (<div className='dice-dot-box'>
+            temp = (<div className='dice-dot-box-switch'>
                 <div id='dotN1'></div>
                 <div id='dotN2'></div>
                 <div id='dotN5'></div>
@@ -31,16 +32,16 @@ export default function Dice(props : any) {
             </div>)
         }
         else if(value === 5){
-            temp = (<div className='dice-dot-box'>
+            temp = (<div className='dice-dot-box-switch'>
                 <div id='dotN1'></div>
                 <div id='dotN2'></div>
                 <div id='dotN5'></div>
                 <div id='dotN6'></div>
-                <div id='dotN8'></div>
+                <div id='dotN10'></div>
             </div>)
         }
         else if(value === 6){
-            temp = (<div className='dice-dot-box'>
+            temp = (<div className='dice-dot-box-switch'>
                 <div id='dotN1'></div>
                 <div id='dotN2'></div>
                 <div id='dotN3'></div>
@@ -52,28 +53,12 @@ export default function Dice(props : any) {
         return temp
     }
     
+    const switchDice = (
+        props.switchDice ? props.value : HandleDiceNumber(props.value)
+    )
     
-    
-    
-
-
-
-
-
-
 
     return (
-        <div /*className="number-box"*/>
-            
-            <button className={classHeld} onClick={props.holdDice} >{props.value}
-                {/* {HandleDiceNumber(props.value)} */}
-            </button>
-        </div>
+        <button className='dice-switch' onClick={props.diceSwitchHandle}>{switchDice}</button>
     )
-
-
-
 }
-
-
-{/* <div className='dice-dot'></div> */}

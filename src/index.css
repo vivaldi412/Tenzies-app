@@ -20,6 +20,7 @@ main {
   justify-items: center;
   align-items: center;
   
+  
 }
 
 
@@ -36,6 +37,7 @@ main {
   align-content: center;
   text-align: center;
   flex-direction: column;
+  position: relative;
   
 }
 
@@ -218,52 +220,46 @@ p {
 
 }
 
-/* .dot-6 { */
-  /* margin: 0; */
-  /* width: 5px; */
-  /* height: 5px; */
-  /* background-color: #1baff3; */
-/* } */
 
 #dotN1 {
   grid-area: p1;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 #dotN2 {
   grid-area: p3;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 #dotN3 {
   grid-area: p4;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 #dotN4 {
   grid-area: p6;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 #dotN5 {
   grid-area: p7;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 #dotN6 {
   grid-area: p9;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
@@ -276,14 +272,62 @@ p {
 }
 #dotN8 {
   grid-area: p2;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+#dotN9 {
+  grid-area: p5;
+  width: 8px;
+  height: 8px;
+  background-color: #ff0000;
+  border-radius: 15%;
+}
+#dotN10 {
+  grid-area: p5;
+  width: 6px;
+  height: 6px;
   background-color: #000000;
   border-radius: 50%;
 }
 
 
+.dice-switch {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 0;
+  bottom: 0;
+  
+  
+  font-family: karla;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #2B283A;
+  font-size: 1rem;
+  font-style: normal;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  
+  
+}
 
+.dice-dot-box-switch {
+  margin: 0;
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  right: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "p1 p2 p3" "p4 p5 p6" "p7 p8 p9";
 
-
+}
 

@@ -1,5 +1,7 @@
 import './index.css'
 import Dice from "../components/Dice"
+import DiceJustDots from "../components/DiceJustDots"
+import SwitchButton from "../components/SwitchButton"
 import { nanoid } from 'nanoid'
 import React from 'react'
 
@@ -14,6 +16,7 @@ export default function() {
   const [bestRecord , setBestRecord] = React.useState({roll: 0, min: 0, sec: 0, timeAlone: 0, id: 0})
   //local storage high score = lshs
   const [lshs, setlshs] = React.useState({hsr: 0, hst: 0, hsm: 0}) //high score roll/time
+  const [switchDice , setSwitchDice] = React.useState(false)
   
 
 
@@ -144,6 +147,16 @@ function fuckingNewDice(max : any , min : any) {
     
     />)
   
+  const diceElementsJustDots = dice.map(die => <DiceJustDots 
+    key={die.id}
+    value={die.value}
+    isHeld={die.isHeld}
+    holdDice={() => holdDice(die.id)}
+    />)  
+      
+
+
+
   function rollHandle() {
     setDice(oldDice => oldDice.map(die => {
       return( die.isHeld === false ? { ...die, value : fuckingNewDice(6,1)} : die ) 
@@ -229,6 +242,12 @@ function fuckingNewDice(max : any , min : any) {
 
 
 
+    function diceSwitchHandle() {
+      setSwitchDice(pervState => !pervState)
+    }
+    
+
+    
 
 
 
@@ -241,6 +260,13 @@ function fuckingNewDice(max : any , min : any) {
       <div className='game-base'>
         {win && <Confetti />}
         <div className="main-box">
+          {/* switch Dice*/}
+          <SwitchButton 
+            value = {dice[0].value}
+            diceSwitchHandle = {diceSwitchHandle}
+            switchDice = {switchDice}
+          />
+          {/* switch Dice*/}
           <div className="top-box">
             <h1>Tenzies</h1>
             <p>Roll until all dice are the same. 
@@ -252,7 +278,7 @@ function fuckingNewDice(max : any , min : any) {
 
 
 
-            {diceElements}
+            {switchDice ? diceElementsJustDots : diceElements}
 
             
 
