@@ -173,7 +173,7 @@ p {
   justify-content: left;
   justify-items: center;
   align-items: center;
-  
+  container-type: inline-size;
 }
 
 .sidebar-detail {
@@ -320,7 +320,7 @@ p {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  right: 0;
+  left: 0;
   top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -331,3 +331,45 @@ p {
 
 }
 
+@media (width < 550px) {
+  .sidebar, .sidebar-detail, .sidebar > h4 {
+    margin: 0;
+    font-size: 80%;
+    text-align: center;
+  }
+  .sidebar > h3 {
+    font-size: 90%;
+    margin: 0;
+    margin-right: 10px;
+  }
+  .sidebar > h4 {
+    margin-left: 10px;
+    font-size: 1.51ch;
+  }
+  .sidebar > h5 {
+    font-size: 1.53ch;
+  }
+}
+
+@media (width < 550px) {
+  main {
+    display: block;
+    margin-bottom: 0;
+  }
+  .sidebar-container {
+    width: 360px;
+    height: 70px;
+    justify-content: center;
+    padding-bottom: 25px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .sidebar {
+    width: 322px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+}

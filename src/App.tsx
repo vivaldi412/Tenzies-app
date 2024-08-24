@@ -258,8 +258,11 @@ function fuckingNewDice(max : any , min : any) {
 
 
       <div className='game-base'>
-        {win && <Confetti />}
         <div className="main-box">
+          {win && <Confetti 
+            width={324}
+            height={324}
+          />}
           {/* switch Dice*/}
           <SwitchButton 
             value = {dice[0].value}
