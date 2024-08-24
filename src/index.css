@@ -226,42 +226,42 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN2 {
   grid-area: p3;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN3 {
   grid-area: p4;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN4 {
   grid-area: p6;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN5 {
   grid-area: p7;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN6 {
   grid-area: p9;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN7 {
   grid-area: p3;
@@ -275,7 +275,7 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 #dotN9 {
   grid-area: p5;
@@ -289,7 +289,7 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 50%;
+  border-radius: 80%;
 }
 
 
@@ -326,7 +326,7 @@ p {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  left: 0.5px;
+  left: 0.46px;
   top: 0.6px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
