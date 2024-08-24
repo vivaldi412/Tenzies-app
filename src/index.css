@@ -226,42 +226,42 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN2 {
   grid-area: p3;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN3 {
   grid-area: p4;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN4 {
   grid-area: p6;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN5 {
   grid-area: p7;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN6 {
   grid-area: p9;
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN7 {
   grid-area: p3;
@@ -275,7 +275,7 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 #dotN9 {
   grid-area: p5;
@@ -289,7 +289,7 @@ p {
   width: 6px;
   height: 6px;
   background-color: #000000;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 
