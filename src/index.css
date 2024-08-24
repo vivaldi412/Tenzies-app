@@ -327,7 +327,7 @@ p {
   height: 30px;
   background-color: transparent;
   left: 0.5px;
-  top: 0.5px;
+  top: 0.6px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
