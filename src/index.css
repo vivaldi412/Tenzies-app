@@ -155,12 +155,13 @@ p {
 
 
 .sidebar {
-  background-color: #58a191;
+  background-color: #090544;
   width: 140px;
   height: 320px;
   border: 2px solid #F5F5F5;
   border-radius: 6px;
   margin: 0px;
+  position: relative;
   
 }
 
@@ -178,14 +179,14 @@ p {
 
 .sidebar-detail {
   font-family: inter;
-  background-color: #F5F5F5;
+  background-color: #00000027;
   padding: 3px 6px;
   width: 110px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 7px;
-  border: 2px solid #910000;
-  color: #27231E;
+  border-radius: 2px;
+  /* border: 3px solid orange; */
+  color: #ffffff;
   
   font-weight:900;
     
@@ -197,9 +198,12 @@ p {
 }
 
 .sidebar > h3 {
-  
-  
-  margin-top: 50px;
+  position: absolute;
+  left: 9px;
+  bottom: 43px;
+
+  margin: 0;
+  /* margin-top: 50px; */
   font-size: 0.90rem;
 }
 
@@ -347,6 +351,9 @@ p {
     font-size: 90%;
     margin: 0;
     margin-right: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .sidebar > h4 {
     margin-left: 10px;
